@@ -1,4 +1,4 @@
-# EVR NP Transfer APP Automation
+# Automation with Cucumber
 
 ### Key Technologies
 
@@ -14,15 +14,10 @@
 * `download plugin for cucumber from intellij idea`
 * `setting to run tests from IntelliJ IDEA: File -> Setting -> Build, Execution, Deployment -> Gradle -> Run tests using -> IntelliJ IDEA`
 
-### Basic Gradle Commands
+### Run Test Procedure
 
-* Clean existing output and build test: **gradle clean test**
+* Run the test from: **TestRunner.java**
 
-### Basic Allure Commands
-
-* Download allure
-* After build run this command to generate report with allure: **allure generate allure-results --clean -output**
-* After successful report generation, to see the results: **allure serve allure-results**
 
 ### Contributors
 

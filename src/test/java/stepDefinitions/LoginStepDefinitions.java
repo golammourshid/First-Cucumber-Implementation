@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -38,5 +39,9 @@ public class LoginStepDefinitions extends BrowserSetup {
     public void userGetsAnErrorMessage() {
         loginPage = new LoginPage(driver);
         loginPage.errorMessageForInvalidCredentials();
+    }
+    @After
+    public void tearDown() {
+        driver.quit();
     }
 }
