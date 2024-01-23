@@ -33,4 +33,10 @@ public class LoginStepDefinitions extends BrowserSetup {
         dashboardPage = new DashboardPage(driver);
         dashboardPage.verifyLoginRedirectsToDashboardPage();
     }
+
+    @Then("user gets an error message")
+    public void userGetsAnErrorMessage() {
+        loginPage = new LoginPage(driver);
+        loginPage.errorMessageForInvalidCredentials();
+    }
 }
